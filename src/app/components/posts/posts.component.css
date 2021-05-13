@@ -1,0 +1,15 @@
+.container{
+    padding: 8rem 0;
+}
+
+.container .segment{
+    width: 30%;
+    left: 65%;
+    position: absolute;
+    margin: 8rem 3rem;
+}
+
+#postic{
+    width: 45rem;
+    height: 40rem;
+}

@@ -1,0 +1,20 @@
+<div class="headr">
+  <div class="headings">
+    <h3>Search for A Hood To join</h3>
+    <h2><input class="animate__animated animate__fadeInUp" type="text" placeholder=""></h2>
+    <button class="animate__animated animate__fadeInUp">Search Hood</button>
+  </div>
+</div>
+
+<div class="container-fluid" style="padding: 0; margin: 0;">
+  <div class="vacant-cards">
+    <div class="card" style="width: 22rem;" *ngFor="let hood of hoods">
+      <img src="/assets/images/hudu2.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{ hood.name }}</h5>
+        <h6 class="card-subtitle mb-2">{{ hood.location }}</h6>
+        <a href="#"><button>VIEW DETAILS</button></a>
+      </div>
+    </div>
+  </div>
+</div>

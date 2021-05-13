@@ -1,0 +1,183 @@
+.headr {
+  width: 100%;
+  height: 45vh;
+  background-image: url(../../../assets/images/connected.jpg);
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.801);
+  background-attachment: fixed;
+  background-position: left;
+}
+.headings {
+  position: absolute;
+  top: 8rem;
+  left: 30%;
+}
+.headings h3 {
+  font-weight: bold;
+  color: white;
+  font-size: 28px;
+  font-family: sans-serif;
+}
+.headings h5 {
+  font-weight: bold;
+  color: white;
+  font-size: 1em;
+}
+.headr {
+  padding: 0;
+  margin: 0;
+}
+.animate__animated.animate__fadeInDown {
+  --animate-duration: 3s;
+}
+
+.animate__animated.animate__fadeInUp {
+  --animate-duration: 1s;
+}
+button {
+  width: 200px;
+  height: 45px;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: sans-serif;
+  border: 1px solid white;
+  color: white;
+  background-color: transparent;
+  left: 50%;
+}
+.jumbotron {
+  display: flex;
+  flex-wrap: wrap;
+  justify-items: flex-start;
+}
+.jumbotron .row {
+  width: 50%;
+  padding-right: 2px;
+}
+.headings {
+  font-size: 15px;
+  font-weight: normal;
+  font-family: sans-serif;
+  color: #4e8cab;
+}
+.vacant-cards {
+  display: inline-grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  grid-gap: 2rem;
+  margin-top: 3rem;
+  margin-left: 4rem;
+  grid-column: 2rem;
+  margin-bottom: 5rem;
+}
+.vacant-cards .card img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border: 1px solid rgba(64, 64, 64, 0.5);
+}
+.vacant-cards .card img:hover {
+  -webkit-filter: brightness(70%);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.vacant-cards .card a button {
+  float: right;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  width: 130px;
+  height: 40px;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: sans-serif;
+  color: white;
+  background-color: #4e8cab;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.4);
+}
+.vacant-cards .card a button:hover {
+  background: transparent;
+  color: #4e8cab;
+  border: 2px solid;
+  border-color: #4e8cab;
+  transition: 0.4s ease-in-out;
+}
+.vacant-cards .card p {
+  font-size: 15px;
+  font-weight: normal;
+  font-family: sans-serif;
+  color: rgba(0, 0, 0, 0.6);
+}
+@media screen and (min-device-width: 320px) and (max-device-width: 640px) {
+  .body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .vacant-cards .card {
+    width: 24.5rem !important;
+  }
+  .vacant-cards {
+    margin-top: 3.5rem;
+    margin-left: -2rem;
+    display: inline-grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 2.5rem;
+  }
+}
+
+/* iphone phones media query */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+  .body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .vacant-houses .card {
+    width: 24rem !important;
+  }
+  .vacant-cards {
+    margin-top: 3.5rem;
+    margin-left: 0rem;
+    display: inline-grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 2.5rem;
+  }
+  .vacant-houses-container {
+    background-color: #f6f6f6;
+    width: 100vw;
+    margin-top: 5rem;
+  }
+}
+
+/* ipad media query */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .vacant-houses .card {
+    width: 24rem !important;
+  }
+  .vacant-cards {
+    margin-top: 3.5rem;
+    margin-left: 0rem;
+    display: inline-grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 2.5rem;
+  }
+}
+
+/* ipad pro media query */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+  .body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+}

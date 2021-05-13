@@ -1,0 +1,182 @@
+.registration-form {
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+  width: 30vw;
+  border: 1px solid rgba(64, 64, 64, 0.2);
+  background-color: rgba(255, 255, 255, 0.7);
+  position: relative;
+}
+.registration-form img {
+  margin-top: 2rem;
+  width: 60%;
+  height: 50px;
+  object-fit: contain;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.registration-form p {
+  margin-top: 0.7rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  text-align: center;
+  color: rgba(64, 64, 64, 0.7);
+  font-weight: bolder;
+  font-size: 17px;
+  font-family: sans-serif;
+}
+.registration-form .form {
+  margin-top: 2rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+.registration-form .form-group {
+  margin-bottom: 5px;
+}
+.registration-form input::placeholder {
+  font-size: 13px;
+}
+.registration-form input[type="text"] {
+  font-size: 14px;
+  padding-top: 20px;
+}
+.registration-form input[type="email"] {
+  font-size: 14px;
+  padding-top: 17px;
+}
+.registration-form input[type="password"] {
+  font-size: 14px;
+  padding-top: 20px;
+  bottom: 3px;
+}
+.registration-form input[type="submit"] {
+  margin-top: 0.5rem;
+  margin-bottom: 3rem;
+  width: 100%;
+  height: 33px;
+  font-size: 14px;
+  font-weight: bolder;
+  font-family: sans-serif;
+  border-radius: 5px;
+  background-color: #4e8cab;
+  outline: none;
+  border: none;
+  color: white;
+}
+.registration-form .form-control {
+  outline: none !important;
+}
+.registration-form .forgot-password {
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  text-align: center;
+  color: #6dbfef;
+  font-weight: bolder;
+  font-size: 12px;
+  font-family: sans-serif;
+  margin-bottom: 3rem;
+}
+.form {
+  position: relative;
+}
+.form .label-email {
+  position: absolute;
+  top: 1px;
+  bottom: 0px;
+  left: 13px;
+  height: 100%;
+  width: 100%;
+  color: grey;
+  pointer-events: none;
+}
+.content-email {
+  position: absolute;
+  top: 10px;
+  font-size: 13px;
+  transition: all 0.3s ease;
+}
+.form input:focus + .label-email .content-email,
+.form input:not(:placeholder-shown) + .label-email .content-email {
+  transform: translateY(-70%);
+  font-size: 12px;
+}
+.form .label-loginpassword {
+  position: absolute;
+  top: 1px;
+  bottom: 0px;
+  left: 13px;
+  height: 100%;
+  width: 100%;
+  color: grey;
+  pointer-events: none;
+}
+.content-loginpassword {
+  position: absolute;
+  top: 50px;
+  font-size: 13px;
+  transition: all 0.3s ease;
+}
+.form input:focus + .label-loginpassword .content-loginpassword,
+.form
+  input:not(:placeholder-shown)
+  + .label-loginpassword
+  .content-loginpassword {
+  transform: translateY(-70%);
+  font-size: 12px;
+}
+/* small phones media query */
+@media screen and (min-device-width: 320px) and (max-device-width: 640px) {
+  .body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .registration-form {
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+    width: 100vw;
+    border: 1px solid rgba(64, 64, 64, 0.2);
+    background-color: rgba(255, 255, 255, 0.7);
+    position: relative;
+  }
+}
+
+/* iphone phones media query */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+  .body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .registration-form {
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+    width: 100vw;
+    border: 1px solid rgba(64, 64, 64, 0.2);
+    background-color: rgba(255, 255, 255, 0.7);
+    position: relative;
+  }
+}
+
+/* ipad media query */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
+}
+
+/* ipad pro media query */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+  .body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+}

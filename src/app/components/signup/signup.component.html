@@ -1,0 +1,35 @@
+<div class="container registration-form selectDisable">
+    <div class="row">
+        <img src="/assets/images/logo.png" alt="logo" class="center">
+        <p>Sign Up to Hoodwatch</p>
+        <div class="col-md-12">
+            <form id="get-form" class="form" method="POST">
+                <div class="form-group">
+                    <input [(ngModel)]="signup.email" type="email"   class="form-control" name="email" id="email" autocomplete="off" placeholder=" "
+                        required />
+                    <label for="email" class="label-email">
+                        <span class="content-email">Email</span>
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <input [(ngModel)]="signup.username" type="text"  class="form-control" name="username" id="username" autocomplete="off"
+                        placeholder=" " required />
+                    <label   for="username" class="label-username">
+                        <span class="content-username">Username</span>
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <input [(ngModel)]="signup.password" type="password"  class="form-control" name="password" id="password" autocomplete="off"
+                        placeholder=" " required />
+                    <label  for="password1" class="label-password1">
+                        <span class="content-password1">Password</span>
+                    </label>
+                </div>
+
+                <button (click)='signupUser()'>SignUp</button>
+            </form>
+        </div>
+    </div>
+</div>
